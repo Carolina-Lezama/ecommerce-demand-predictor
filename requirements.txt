@@ -1,0 +1,20 @@
+# Manipulación de datos y base de datos
+pandas==2.2.0
+SQLAlchemy==2.0.25
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+
+# Machine Learning (para después)
+scikit-learn
+xgboost
+mlflow
+
+# API (para después)
+fastapi
+uvicorn
+
+# Crear entorno: py -3.12 -m venv venv   
+# Activar entorno virtual: venv\Scripts\activate
+# Codigo para instalar: pip install -r requirements.txt}
+# Verificar paquetes: pip list
+# Salir del entorno: deactivate

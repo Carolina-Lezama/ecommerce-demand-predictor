@@ -1,0 +1,24 @@
+# levantar la base de datos con Docker y luego usar un script de Python para meter los datos.
+version: '3.8'
+
+services:
+  ecommerce_postgres:
+    container_name: ecommerce_postgres
+    env_file:
+      - .env
+    image: postgres:15 # Es mejor especificar una versión que usar 'latest'
+    restart: always
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Para que no pierdas tus datos al borrar el contenedor
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+
+# Crear contenedor, arrancar PostgreSQL: docker-compose up -d
