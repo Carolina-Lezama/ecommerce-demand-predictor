@@ -41,3 +41,6 @@ if __name__ == "__main__":
 
 # crear una tabla por cada archivo CSV
 # Ejecutar py load_data.py
+
+# Para ver la información, necesitas pedirle a tu terminal que entre al contenedor de Docker
+# docker exec -it ecommerce_postgres psql -U postgres

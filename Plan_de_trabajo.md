@@ -6,8 +6,8 @@
 - Nube: Google Cloud Platform
 - Monitoreo/Tracking: MLflow
 
-Plan de Trabajo: End-to-End MLOps Project
-1. Configuración de Entorno y Repositorio
+Plan de Trabajo: End-to-End MLOps Project 
+1. Configuración de Entorno y Repositorio (COMPLETO)
     1.1. Inicialización de repositorio en GitHub con estructura profesional.
 
     1.2. Configuración de entorno virtual (venv o conda) y gestión de dependencias (requirements.txt).

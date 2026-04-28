@@ -1,5 +1,4 @@
 # levantar la base de datos con Docker y luego usar un script de Python para meter los datos.
-version: '3.8'
 
 services:
   ecommerce_postgres:
@@ -9,7 +8,7 @@ services:
     image: postgres:15 # Es mejor especificar una versión que usar 'latest'
     restart: always
     ports:
-      - "5433:5432"
+      - "5433:5432" # Cada vez que cree un nuevo contenedor de Docker debo dar un puerto diferente
     volumes:
       - postgres_data:/var/lib/postgresql/data # Para que no pierdas tus datos al borrar el contenedor
     healthcheck:
@@ -21,4 +20,6 @@ services:
 volumes:
   postgres_data:
 
-# Crear contenedor, arrancar PostgreSQL: docker-compose up -d
+# 1. abrir docker
+# 2. Apagar cualquier intento anterior: docker-compose down
+# 3. Crear contenedor, arrancar PostgreSQL: docker-compose up -d
