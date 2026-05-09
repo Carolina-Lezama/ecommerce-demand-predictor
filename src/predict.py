@@ -1,0 +1,2 @@
+# Script que carga el modelo guardado y hace predicciones
+'''Consumo o Despliegue (predict.py o API): Cuando la empresa necesita predecir la demanda del próximo mes, no corre todo el entrenamiento de nuevo. Un sistema automatizado (o una API construida en FastAPI) ejecuta el script de predicción, el cual simplemente "despierta" al archivo .pkl, le pasa los datos nuevos y devuelve el resultado en segundos.'''
