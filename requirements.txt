@@ -16,6 +16,8 @@ mlflow
 fastapi
 uvicorn
 
+pyarrow
+
 # Crear entorno: py -3.12 -m venv venv   
 # Activar entorno virtual: venv\Scripts\activate
 # Codigo para instalar: pip install -r requirements.txt
