@@ -66,3 +66,66 @@ Plan de Trabajo: End-to-End MLOps Project
 # Otros:
 - .ipynb para: El EDA (Análisis Exploratorio de Datos), probar hipótesis, hacer gráficos rápidos y entender tus datos.
 - .py para: El proyecto final. Traducir el código del notebook a módulos estructurados.
+
+
+
+
+
+
+
+Título: Corto y humano ("Predecir ventas con Python")
+Desafío: ¿Qué problema estabas resolviendo?
+Proceso: ¿Cómo lo abordaste? (herramientas, pasos, colaboración)
+Resultado: Lo que cambió: números o lecciones
+Visuales: Capturas de pantalla, demostración breve o enlace de GitHub.
+Imagina que estás explicando el proyecto a un reclutador ocupado en 20 segundos. Frases cortas. Decisiones claras. Resultados reales.
+Archivos README claros que expliquen qué hace cada proyecto.
+Toma de decisiones visible y un pensamiento documentado.
+Acceso rápido a demostraciones en vivo (live demos) o entregables finales.
+
+Cada proyecto responde: ¿Qué problema? ¿Por qué importa? ¿Qué resultado hubo?
+
+
+Muestras un flujo de trabajo de inicio a fin: planteamiento → datos → modelado → evaluación → conclusión.
+
+
+La evaluación es real: métricas correctas para la tarea + qué significan en lenguaje sencillo.
+
+
+Baseline (línea base) + mejora: con qué comparaste y por qué tu elección final es mejor.
+
+
+Estrategia de validación declarada (train/test split, división temporal, cross-validation).
+
+
+Decisiones clave explicadas (elección de variables, modelo, umbrales, trade-offs).
+
+
+Interpretabilidad / análisis de errores: en qué falla el modelo + limitaciones.
+
+
+Reproducibilidad: repo limpio, README claro, requerimientos y ubicación del resultado final.
+
+
+Enlaces sin fricción: un clic al código, un clic al resultado final (notebook/demo)
+
+) Plantilla de página de proyecto (copiar/pegar)
+Título
+Problema (1–2 líneas)
+Por qué importa (quién se beneficia / qué decisión respalda)
+Datos (fuente + cuál es el objetivo o target)
+Enfoque (pasos principales, sin entrar en cada detalle técnico)
+Modelado (modelos probados + cuál elegiste)
+Evaluación (métrica(s) + comparación con el baseline)
+Qué aprendiste (3 puntos: hallazgos + limitaciones)
+Siguiente paso (qué harías con más tiempo o más datos)
+Enlaces (repo + notebook/reporte + demo opcional)
+
+Errores comunes (lo que hacen los portafolios débiles)
+Solo "herramientas + nombre del modelo": Sin planteamiento del problema ni resultados.
+Reportar una métrica sin contexto: No explicar si es un número bueno o malo, o qué trade-off implica.
+Sin baseline ni comparación: Decir "obtuve 0.92" — ¿comparado con qué?
+No mencionar cómo se hizo la validación: Esto hace que sea difícil confiar en los resultados.
+Sin análisis de errores: Decir que "funciona excelente" pero no mencionar los casos en los que el modelo falla.
+Repositorios desordenados: Tener 6 notebooks, sin README y sin saber por dónde empezar.
+Copiar y pegar explicaciones genéricas de algoritmos: En lugar de mostrar tus propias decisiones y lógica.
