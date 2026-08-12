@@ -83,3 +83,8 @@ Outliers estadísticos reales (Tratamiento DESPUÉS del split): Por ejemplo, un 
 
 - En X (Variables predictoras): Calculas los límites (como los cuartiles) usando solo el conjunto de Train y "recortas" o transformas esos valores atípicos. Luego aplicas esos mismos límites de Train al Test.
 - En Y (Target): Si tienes un pico anormal de demanda en Train, puedes recortarlo (capping) para evitar que el modelo se desvíe tratando de aprender un evento que fue casualidad. Pero el Y de Test NO se toca. El mundo real tiene anomalías y tu Test debe ser un reflejo cruel y exacto del mundo real.
+
+# ¿y es siempre una sola columna (Series)?
+En la gran mayoría de los casos tradicionales (y en nuestro proyecto actual para predecir la demanda), sí, es una sola columna (una pd.Series).
+
+Sin embargo, los algoritmos modernos permiten tener un y de múltiples columnas. A esto se le llama Multi-output Regression o Multi-label Classification. Por ejemplo, si con las mismas variables de entrada (X) quisieras que un solo modelo te prediga simultáneamente la demanda en unidades (columna 1) y el ingreso en reales (columna 2).
