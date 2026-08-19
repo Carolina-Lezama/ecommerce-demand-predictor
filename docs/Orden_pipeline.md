@@ -39,6 +39,8 @@ Analizas correlaciones o usas algoritmos (como Lasso) solo en Train para elegir 
 
 ¡Se aplica ÚNICAMENTE a Train! Si balanceas antes del split o balanceas el Test, arruinas la evaluación, porque estarías evaluando tu modelo en datos inventados o en una proporción que no existe en el mundo real.
 
+El balanceo es exclusivo para problemas de Clasificación (cuando quieres predecir si algo es "A" o "B").
+
 ## 7.Entrenamiento del Modelo:Fit.
 
 Le pasas tu X_train ya procesada y tu y_train al algoritmo (como Random Forest, XGBoost o Regresión Lineal) para que aprenda las reglas matemáticas que conectan los datos con la demanda.
